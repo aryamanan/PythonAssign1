@@ -82,6 +82,7 @@ def ques3():
 def ques4():
     print('Question 4 program \n')
      
+    #puts marks of 5 students into a list
     marks_list=[]
     for i in range (5):
         mark=float(input("Enter mark of Student:" ))
