@@ -103,7 +103,7 @@ def ques5a():
      
     color=['red','Green', "White",'Black', 'Pink', 'Yellow']
 
-    #removes last 3 inputs from array
+    #removes 4th input from array
     color.pop(3)
     print(color, "\n")
     cont=input("Press R to proceed: ")
