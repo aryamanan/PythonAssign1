@@ -56,13 +56,14 @@ def ques2():
       cont
 
 def ques3():
+    #to store different data type values into a list.
     
     print('Question 3 program \n')
      
     sid=input("Enter SID: ")
     name=input("Enter name: ")
 
-    gender=input("Enter Gender (M or F): ")
+    gender=input("Enter Gender (M, F or U for unknown): ")
 
     course=input("Enter course name: ")
     cgpa=float(input("Enter CGPA: "))
@@ -99,11 +100,12 @@ def ques4():
       cont
 
 def ques5a():
-    print('Question 5 program \n')
+    #program to print a specified list after removing 4th element.
+    print('Question 5a program \n')
      
     color=['red','Green', "White",'Black', 'Pink', 'Yellow']
 
-    #removes 4th input from array
+    #removes 4th element from array
     color.pop(3)
     print(color, "\n")
     cont=input("Press R to proceed: ")
@@ -115,13 +117,22 @@ def ques5a():
       cont
 
 def ques5b():
+    
     print('Question 5b program \n')
-     
+    
     color=['red','Green', "White",'Black', 'Pink', 'Yellow']
+    #Removes ‘Black’ and ‘Pink’ element from list 
     color[color.index("Black")]="Purple"; color[color.index("Pink")]="Purple"
-    print(color, "\n")
+    print(color)
 
-    Print("thank you")
+
+    endIt=input("press R to restart and any other key to end program: ") 
+    if endIt.upper() == "R":
+        Input()
+    else:
+        sys.exit()
+    
+ 
  
 def Input():
  firstInp=input("Run programs from Ques1 to Ques5b in order [Y or N]: ")
@@ -131,7 +142,7 @@ def Input():
    ques1()
    
  elif firstInp.upper() == "N":
-   print("choose which one you want directly from here [1, 2, 3 , 4, 5a, 5b]\n")
+   print("Program Closed")
    
  else:
    print("invalid input, please pick between Y and N")
